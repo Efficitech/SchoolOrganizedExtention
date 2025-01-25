@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Section where bookmarks will be displayed -->
+        <section class="section">
+            <div class="logo-section">
+                <img src="icon.png" style="width:50px; height:50px;">
+                <div class="brand-stack">
+                    <div>SchoolOrganized</div>
+                    <span>Built by CodingSpot</span>
+                </div>
+            </div>
+            <br>
+            <button class="add">Add Bookmark</button>
+            <button class="change-body-bg">Change Background</button>
+            <input type="text" id="searchBookmarks" placeholder="Search bookmarks..." class="search-bar">
+            <div class="bookmarks"></div>
+        </section>
+
+        <!-- Modal for adding a bookmark -->
+        <div id="addModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Bookmark</h2>
+                <input type="text" id="bookmarkName" placeholder="Enter bookmark name">
+                <input type="text" id="bookmarkValue" placeholder="Enter bookmark URL">
+                <button id="modalAddBtn">Add Bookmark</button>
+            </div>
+        </div>
+
+        <!-- Modal for changing background -->
+        <div id="bgModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Change Background</h2>
+                <input type="color" id="bgColorPicker" value="#ffffff">
+                <input type="text" id="bgImagePicker" placeholder="Enter background image URL">
+                <button id="bgChangeBtn">Change Background</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    min-height: 500px; /* Ensures the body takes up at least the full height of the viewport */
+    width: 500px; /* Ensures the body takes up the full width of the screen */
+}
+
+.container {
+    width: 90%; /* Increases the width of the container to 90% of the screen width */
+    max-width: 1600px; /* Sets the maximum width to 1600px */
+    margin: 0 auto;
+    padding: 40px; /* Increased padding for more space inside the container */
+}
+
+.section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increased padding of the section for more space */
+}
+
+.add, .change-body-bg {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Increased padding for buttons */
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add:hover, .change-body-bg:hover {
+    background-color: #0056b3;
+}
+
+.bookmarks {
+    margin-top: 30px;
+    position: relative;
+}
+
+
+
+.bookmark-item {
+    background-color: #fafafa;
+    padding: 15px; /* Increased padding for each bookmark */
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.bookmark-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.bookmark-item a:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 40px; /* Increased padding in the modal */
+    border-radius: 8px;
+    width: 80%;
+    max-width: 700px; /* Maximum width of the modal */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="color"] {
+    width: 100%;
+    padding: 15px; /* Increased padding for input fields */
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Increased padding for buttons */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.bookmark-item button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px; /* Adds space between buttons */
+}
+
+.bookmark-item button:nth-child(3) { /* Targeting the second button (Edit) */
+    right: 80px; /* Adjusts the position of the edit button */
+}
+
+.logo-section{
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	user-select:none;
+}
+
+.brand-stack div{
+	font-size:20px;
+	margin-left:10px;
+}
+.brand-stack span{
+	font-size:10px;
+	margin-left:10px;
+}
+
+.brand-stack{
+	display:flex;
+	flex-direction:column;
+}

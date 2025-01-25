@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Dashboard",
+  "description": "Extension for schoolorganized.github.io/-",
+  "version": "1.0",
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://schoolorganized.github.io/-/*",
+    "https://schoolorganized.github.io/-/*"
+  ]
+}
