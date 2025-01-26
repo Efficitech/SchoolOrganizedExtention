@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Dashboard",
-  "description": "Extension for schoolorganized.github.io/-",
+  "description": "The Extention Version Of SchoolOrganized made by Efficitech",
   "version": "1.0",
   "action": {
     "default_icon": "icon.png",
