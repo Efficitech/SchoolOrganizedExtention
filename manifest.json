@@ -11,6 +11,11 @@
     "activeTab",
     "storage"
   ],
+  "icons": {
+		"16": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
   "host_permissions": [
     "http://schoolorganized.github.io/-/*",
     "https://schoolorganized.github.io/-/*"
